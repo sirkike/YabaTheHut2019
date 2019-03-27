@@ -1,0 +1,53 @@
+
+
+
+
+PROYECTO: BIBLIOTECA ONLINE DIGITAL, CON POSIBILIDAD DE:
+1) COMPRAR UN LIBRO Y QUE SE PUEDA DESCARGAR EN PDF.
+2) ALQUILAR UN LBIRO TEMPORALMENTE, CUANDO SE VENZA EL PLAZO QUE NO PUEDA VER MAS EL PDF 
+   Y QUE NO PUEDA DESCARGAR.
+   CUANDO EL USUARIO ALQUILA UN LIBRO, VALIDAR QUE CUANDO ENTRE AL LINK, EL SISTEMA VALIDE SI PUEDE
+   VER EL PDF SEGUN LA FECHA EN LA QUE ENTRA.
+   
+   SUBIR PDF DE LIBROS A ALGUN LUGAR PARA QUE SE PUEDA INGRESAR DESDE LA WEB Y VER EL PDF.
+
+
+
+LIBROS
+CLIENTES
+RESERVA
+PERMISOS -->
+
+TIPOS DE USUARIOS
+1-Admin 
+2-Usuarios comunes
+
+Existe la posibilidad de dar de alta usuarios:
+El administrador desde una opción que solo el ve, da de alta el usuario de forma local AMB
+El usuario se conecta a la página, selecciona la opción de registrarse, se registra AM
+
+
+El administrador / empleados, ven en el menú la opción de dar de alta libros nuevos  AMB
+
+El usuario puede a través de la página puede consultar la disponibilidad de la opción “búsqueda” 
+Si desea reserva un libro tiene que tener usuario y estar logueado.
+
+Luego se despliega el carrito de compras
+
+**Podemos tener 2 tipos de usuarios únicamente, usuario final no usarlo, 
+sino que un administrador que pueda ver todas las opciones de pantalla y el usuario empleado 
+que ve un menú limitado – o podemos tener un tercer usuario (usuario) que se registra de forma 
+remota y para que se registraría ¿¿ solo búsqueda 
+
+Como 2da alternativa tenemos un sistema de compra y alquiler de libros virtual:
+
+No existe disponibilidad de libros dados de altas
+Si se compra un libro, se descarga y se guarda el archivo descargado por el usuario
+Si el libro es alquilado, se cobra un monto por el mismo y se genera un permiso a una url 
+por tiempo determinado.
+
+
+
+
+
+

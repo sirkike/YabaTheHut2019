@@ -1,9 +1,6 @@
 
-
-
-
-PROYECTO: BIBLIOTECA ONLINE DIGITAL, CON POSIBILIDAD DE: SDFASDFASDFASDF
-HOLA KIJE BOOS  QUE SE PUEDA DESCARGAR EN PDF.
+PROYECTO: BIBLIOTECA ONLINE DIGITAL, CON POSIBILIDAD DE:
+1) COMPRAR UN LIBRO Y QUE SE PUEDA DESCARGAR EN PDF.
 2) ALQUILAR UN LBIRO TEMPORALMENTE, CUANDO SE VENZA EL PLAZO QUE NO PUEDA VER MAS EL PDF 
    Y QUE NO PUEDA DESCARGAR.
    CUANDO EL USUARIO ALQUILA UN LIBRO, VALIDAR QUE CUANDO ENTRE AL LINK, EL SISTEMA VALIDE SI PUEDE
@@ -45,7 +42,6 @@ No existe disponibilidad de libros dados de altas
 Si se compra un libro, se descarga y se guarda el archivo descargado por el usuario
 Si el libro es alquilado, se cobra un monto por el mismo y se genera un permiso a una url 
 por tiempo determinado.
-
 
 
 

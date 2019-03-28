@@ -15,9 +15,22 @@ CLIENTES
 RESERVA
 PERMISOS -->
 
+
 TIPOS DE USUARIOS
 1-Admin 
 2-Usuarios comunes
+
+
+PAGINAS
+-LOGIN
+-HOME
+-HISTORIAL USUARIO
+-ABM USUARIOS
+-ABM LIBROS
+-BUSQUEDA DE LIBROS PARA ALQUILAR / COMPRAR
+
+
+
 
 Existe la posibilidad de dar de alta usuarios:
 El administrador desde una opción que solo el ve, da de alta el usuario de forma local AMB

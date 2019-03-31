@@ -7,6 +7,8 @@
 <title>Insert title here</title>
 </head>
 <body>
+<h1>Hola Usuario! Acceso correcto</h1>
 
+<h1>ESTE JSP VA A SER EL MENU CON TODAS LAS OPCIONES DE USUARIO</h1>
 </body>
 </html>

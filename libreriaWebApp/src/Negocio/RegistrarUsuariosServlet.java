@@ -13,31 +13,34 @@ import javax.servlet.http.HttpServletResponse;
 import Controlador.Consultas;
 
 /**
- * Servlet implementation class LoginServlet
+ * Servlet implementation class RegistrarUsuariosServlet
  */
-@WebServlet("/Iniciar")
-public class LoginServlet extends HttpServlet {
+@WebServlet("/Registrar")
+public class RegistrarUsuariosServlet extends HttpServlet {
 
-    protected void processRequest(HttpServletRequest request, HttpServletResponse response)
-                   throws ServletException, IOException, SQLException {
-    	response.setContentType("text/html;charset=UTF-8");
-    	PrintWriter out = response.getWriter();
-    	
-    	//capturo los datos del formulario Login
-    	String usuario = request.getParameter("Usuario");
-    	String contrasenia = request.getParameter("Contraseña");
-    	
-    	//Llamo a Consultas y le paso los parametros al metodo de autenticacion
-    	Consultas co = new Consultas();
-    	if(co.autenticacion(usuario, contrasenia)) {
-    		response.sendRedirect("Menu.jsp");
-    	}else {
-    		response.sendRedirect("Login.jsp");
-    	}
-    	
-    	
-    	
-    }
+	protected void processRequest(HttpServletRequest request, HttpServletResponse response)throws ServletException, IOException, SQLException {
+	
+	response.setContentType("text/html;charset=UTF-8");
+	PrintWriter out = response.getWriter();
+	
+	
+	//Capturo los datos del usuario
+	String nombreApellido = request.getParameter("NombreApellido");
+	String usuario = request.getParameter("Usuario");
+	String contraseña = request.getParameter("Contraseña");
+	
+	//Creo la consulta que va a insertar los datos en la BD
+	Consultas co = new Consultas();
+	if(co.registraUsuario(nombreApellido, usuario, contraseña)) {
+		response.sendRedirect("Login.jsp");
+	}else {
+		response.sendRedirect("RegistroUsuarioLogin.jsp");
+	}
+	
+	
+	
+}
+	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		try {
 			processRequest(request, response);

@@ -54,8 +54,7 @@ public boolean registraUsuario (String nombreUsuario, String usuario, String con
 	
 	PreparedStatement pst = null;  //no necesitamos ResultSet porque no vamos a devolver nada, solo insertamos
 	try {
-		String consulta = "insert into user (userName,user,userType,password)"
-				          + "vlaues(?,?,2,?)";
+		String consulta = "insert into user (userName,user,userType,password) values(?,?,2,?)";
 		pst = getConexion().prepareStatement(consulta); //pasamos la conexion
 		pst.setString(1, nombreUsuario);  //pasamos los 3 parametros
 		pst.setString(2, usuario);

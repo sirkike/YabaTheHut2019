@@ -26,25 +26,25 @@
     <link rel="stylesheet" href="CSS/signin.css" type="text/css" ><link>
   </head>
   
-  <body class="text-center" >
-    <form class="form-signin" action="LoginServlet">
-  	<img class="mb-4" src="IMG/BocaJrs.PNG" alt="" width="72" height="72">
-  	<h1 class="h3 mb-3 font-weight-normal">Iniciar sesión </h1>
-  	<label for="inputEmail" class="sr-only">Email address</label>
-	<input type="email" id="inputEmail" class="form-control" placeholder="Email" required autofocus>
-	<label for="inputPassword" class="sr-only">Password</label>
-    <input type="password" id="inputPassword" class="form-control" placeholder="Contraseña" required>
-	<div class="checkbox mb-3">
-     <label>
-      <input type="checkbox" value="remember-me"> Recordarme
-     </label>
-   </div>
-   <button class="btn btn-lg btn-primary btn-block" type="submit">Ingresar</button>
-  
-  <a href="#">Perdiste tu contraseña?</a>
-  <p class="mt-5 mb-3 text-muted">&copy; 2019</p>
-</form>
+ <body class="text-center" >
+    <form class="form-signin" action="Iniciar" method="post">
+  		<img class="mb-4" src="IMG/BocaJrs.PNG" alt="" width="72" height="72">
+  		<h1 class="h3 mb-3 font-weight-normal">Iniciar sesión </h1>
+  		<label for="inputEmail" class="sr-only">Email address</label>
+		<input type="text" class="form-control" placeholder="Usuario" name="Usuario" required autofocus>
+		<label for="inputPassword" class="sr-only">Password</label>
+   		<input type="password" class="form-control" placeholder="Contraseña" name="Contraseña" required>
+		<div class="checkbox mb-3">
+     		<label>
+      			<input type="checkbox" value="remember-me"> Recordarme
+     		</label>
+   		</div>
+   		<button class="btn btn-lg btn-primary btn-block" type="submit">Ingresar</button>
+  		<a href="#">Perdiste tu contraseña?</a>
+  		<br><br>
+  		<h6>No tienes una cuenta...<a href="RegistroUsuarioLogin.jsp"> Registrarme </a> </h6>
+ 		 <p class="mt-5 mb-3 text-muted">&copy; 2019</p>
+  	</form>
 </body>
-</html>
 
 

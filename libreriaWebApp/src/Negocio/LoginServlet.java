@@ -18,45 +18,32 @@ import Controlador.Consultas;
 @WebServlet("/Iniciar")
 public class LoginServlet extends HttpServlet {
 
-    protected void processRequest(HttpServletRequest request, HttpServletResponse response)
-                   throws ServletException, IOException, SQLException {
-    	response.setContentType("text/html;charset=UTF-8");
-    	PrintWriter out = response.getWriter();
-    	
-    	//capturo los datos del formulario Login
-    	String usuario = request.getParameter("Usuario");
-    	String contrasenia = request.getParameter("Contraseña");
-    	
-    	//Llamo a Consultas y le paso los parametros al metodo de autenticacion
-    	Consultas co = new Consultas();
-    	if(co.autenticacion(usuario, contrasenia)) {
-    		response.sendRedirect("Menu.jsp");
-    	}else {
-    		response.sendRedirect("Login.jsp");
-    	}
-    	
-    	
-    	
-    }
+	private static final long serialVersionUID = 1L;
+	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		try {
-			processRequest(request, response);
-		} catch (SQLException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		
 		
 	}
  @Override
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		try {
-			processRequest (request, response);
-		} catch (SQLException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+	
+		//capturo los datos del formulario Login
+ 	String usuario = request.getParameter("Usuario");
+ 	String contrasenia = request.getParameter("Contraseña");
+ 	
+ 	//Llamo a Consultas y le paso los parametros al metodo de autenticacion
+ 	try {
+ 	Consultas co = new Consultas();
+ 	if(co.autenticacion(usuario, contrasenia)) {
+ 		response.sendRedirect("Menu.jsp");
+ 	}else {
 
+ 		response.sendRedirect("Login.jsp");
+ 
+ 	}
+ 	
+ }catch(Exception e) {
+	 }
  }
 
 }

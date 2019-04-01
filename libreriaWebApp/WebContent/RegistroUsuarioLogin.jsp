@@ -4,6 +4,8 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
+
+	<link rel="stylesheet" href="CSS/bootstrap-reboot.min.css" type="text/css" ><link>
 <title>Registrarme</title>
 </head>
 

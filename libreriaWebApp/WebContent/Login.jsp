@@ -1,8 +1,8 @@
 
 <!doctype html>
   <head>
+  
     <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/sign-in/">
-
     <!-- CSS -->
 	<link rel="stylesheet" href="CSS/bootstrap.min.css" type="text/css" ><link>
 	
@@ -42,7 +42,7 @@
    		<button class="btn btn-lg btn-primary btn-block" type="submit">Ingresar</button>
   		<a href="#">Perdiste tu contraseña?</a>
   		<br><br>
-  		<h6>No tienes una cuenta...<a href="RegistroUsuarioLogin.jsp"> Registrarme </a> </h6>
+  		<h6>No tengo una cuenta...<a href="RegistroUsuarioLogin.jsp"> Registrarme </a> </h6>
  		 <p class="mt-5 mb-3 text-muted">&copy; 2019</p>
   	</form>
 </body>
